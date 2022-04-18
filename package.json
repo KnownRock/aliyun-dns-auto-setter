@@ -1,0 +1,26 @@
+{
+  "name": "aliyun-dns-auto-setter",
+  "version": "1.0.0",
+  "description": "Aliyun dns auto setter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KnownRock/aliyun-dns-auto-setter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KnownRock/aliyun-dns-auto-setter/issues"
+  },
+  "homepage": "https://github.com/KnownRock/aliyun-dns-auto-setter#readme",
+  "dependencies": {
+    "@alicloud/pop-core": "^1.7.10",
+    "aliyun-dns-setter": "^0.0.3",
+    "axios": "^0.26.1",
+    "node-cron": "^3.0.0"
+  }
+}
