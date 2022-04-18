@@ -28,17 +28,16 @@ function createTask({
     apiVersion: '2015-01-09'
   })
 
-  const data = axios.get(url).then(res => res.data);
-
-  const c = cron.schedule(`*/${intervalWithMinutes} * * * * *`, () => {
-    
-
-
-    // console.log(c);
-
-
-
+  const schedule = cron.schedule(`*/${intervalWithMinutes} * * * * *`, () => {
+    const data = axios.get(url).then(res => res.data);
+    setDns({
+      client,
+      domain,
+      ip:data
+    })
   });
+
+  return schedule
 }
 
 
