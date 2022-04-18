@@ -1,6 +1,6 @@
 {
   "name": "aliyun-dns-auto-setter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Aliyun dns auto setter",
   "main": "index.js",
   "scripts": {
