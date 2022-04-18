@@ -38,7 +38,7 @@ function createTask({
     apiVersion: '2015-01-09'
   })
 
-  const schedule = cron.schedule(`*/${intervalWithMinutes} * * * * *`,async () => {
+  const schedule = cron.schedule(`*/${intervalWithMinutes} * * * *`,async () => {
     if(type === 'from-url'){
       try {
         const data = await axios.get(url).then(res => res.data);
